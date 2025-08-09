@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Text to Speech</h1>
+    <textarea id="text" rows="5" placeholder="Введите текст..."></textarea>
+
+    <label for="rate">Скорость:</label>
+    <input type="range" id="rate" min="0.5" max="10" step="0.1" value="1">
+    <span>1</span>
+
+    <label for="volume">Громкость:</label>
+    <input type="range" id="volume" min="0" max="10" step="0.1" value="1">
+    <span>1</span>
+
+    <div class="buttons">
+      <button onclick="speak()">Озвучить</button>
+      <button onclick="pause()">Пауза</button>
+      <button onclick="resume()">Продолжить</button>
+      <button onclick="stop()">Остановить</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
